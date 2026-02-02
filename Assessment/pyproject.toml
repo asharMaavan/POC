@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boards-qa-assessment"
+version = "0.1.0"
+description = "Scaffold for the Boards QA assessment"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "pydantic",
+  "pytest",
+  "pytest-bdd",
+  "pytest-html",
+  "httpx",
+  "playwright",
+  "pytest-playwright",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["put*"]
